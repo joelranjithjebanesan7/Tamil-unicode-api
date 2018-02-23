@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>Tamil Unicode</title>
+</head>
+<body>
+<div>
+<form method="get">
+    <input type="text" placeholder="Search" name="word">
+    <button type="submit">Search</button>
+</form>
+</div>
+<br/>
+{% for letter in letters %}
+
+{{letter.unicode}} = {{ letter.description }}
+
+{% endfor %}
+  
+</body>
+</html>
